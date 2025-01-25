@@ -293,6 +293,12 @@ nav ul li a:hover{
 .tools.dua {
     width: 150px;
 }
+.tools.tiga {
+    width: 110px;
+}
+.tools.empat {
+    width: 110px;
+}
 
 .card .isi-card .link a{
     text-decoration: none;
