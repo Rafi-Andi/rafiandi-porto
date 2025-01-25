@@ -14,11 +14,14 @@ body {
 :root {
     --primary-color: #00abf0;
     --secondary-color: #232222;
-    --background-color: #081b29;
+    --background-color: rgb(8, 27, 41);
     --box-shadow-xl:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)
 }
 
-nav {
+
+nav { 
+    background-color: rgba(8, 27, 41, 0.644);
+    backdrop-filter: blur(5px);
     position: fixed;
     top: 0;
     right: 0;
@@ -26,8 +29,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: transparent;
-    padding: 20px;
+    padding: 15px 30px;
     font-weight: 700;
     position: relative;
     position: fixed;
@@ -171,8 +173,30 @@ nav ul li a:hover{
     color: var(--primary-color);
 }
 
-.container-Keahlian {
+.container-results {
+    background-color: #0a2230;
+    display: flex;
+    justify-content: space-around;
     padding: 50px;
+}
+
+.container-results .judul {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.container-results .judul h1 {
+    font-size: 40px;
+}
+ 
+.container-results p {
+    font-weight: 700;
+}
+
+.container-Keahlian {
+    padding: 100px;
+    background-color: #0a2230;
 }
 .container-tools {
     margin-top: 20px;
@@ -183,6 +207,7 @@ nav ul li a:hover{
 }
 
 .cardTools {
+    width: 300px;
     display: flex;
     gap: 0.5rem;
     height: 60px;
@@ -222,10 +247,17 @@ nav ul li a:hover{
     padding: 10px;
 }
 
+.cardTools.github {
+    background-color: white;
+}
+
+.cardTools.github h4 {
+    color: black;
+}
 
 
 .container-project {
-    padding: 20px;
+    padding: 100px;
 }
 .container-card-project {
     display: flex;
@@ -240,7 +272,7 @@ nav ul li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 450px;
     background-color: #0a2230;
     padding: 20px;
     border-radius: 20px;
@@ -261,7 +293,7 @@ nav ul li a:hover{
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    width: 360px;
+    width: 380px;
 }
 
 .card:hover {
@@ -302,12 +334,193 @@ nav ul li a:hover{
 
 .card .isi-card .link a{
     text-decoration: none;
+    transition: all .5;
+    -webkit-transition: all .5;
+    -moz-transition: all .5;
+    -ms-transition: all .5;
+    -o-transition: all .5;
+}
+
+.card .isi-card .link a:hover {
+    color: gray;
 }
 .card p {
     font-size: 14px;
 }
 
-@media (max-width: 868px) {
+.container-sertifikat {
+    height: auto;
+    padding: 50px;
+}
+
+.container-card-sertif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.container-card-sertif img {
+    width: 400px;
+}
+
+.sertif {
+    width: 400px;
+    position: relative;
+}
+
+.sertif .deskripsi {
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--background-color);
+    opacity: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+}
+
+.container-contact {
+    padding: 50px;
+}
+.container-contact form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: black;
+}
+
+.container-contact form input {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    width: 380px;
+    height: 100px;
+    background-color: #0a2230;
+}
+
+.container-contact form input[type="text"] {
+    width: 780px;
+    height: 200px;
+}
+
+.container-contact form input[type="submit"] {
+    width: 200px;
+    height: 50px;
+    background-color: #00abf0;
+}
+
+.container-contact .nama {
+    display: flex;
+    gap: 1rem;
+}
+
+footer {
+    background-color: #0a2230;
+    padding: 80px;
+    width: 100%;
+}
+
+footer .content-footer {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+
+footer .judul-web h1 {
+    margin-bottom: 15px;
+}
+footer .judul-web .ikon {
+    display: flex;
+    gap: 1rem;
+    margin-top: 6px;
+}
+
+footer .judul-web .ikon .logo-ikon {
+    color: black;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+footer .judul-web .ikon .logo-ikon:hover {
+    color: gray;
+}
+
+footer .navigasi h1 {
+    margin-bottom: 15px;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    transition: all;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
+    transition-duration: 0.5s;
+}
+
+footer ul li a:hover {
+    color: gray;
+}
+
+footer .sosial-media h1 {
+    margin-bottom: 15px;
+}
+
+footer .sosial-media p a {
+    text-decoration: none;
+    color: white;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+footer .sosial-media p a:hover {
+    color: gray;
+}
+
+footer .copyright {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
     .menu {
         display: block;
     }
@@ -317,6 +530,7 @@ nav ul li a:hover{
     }
     nav {
         background-color: #091f2e;
+        padding: 20px;
     }
 
     nav .list {
@@ -358,11 +572,67 @@ nav ul li a:hover{
         width: 200px;
     }
 
+    .container-results .judul h1 {
+        font-size: 30px;
+    }
+     
+    .container-results p {
+        font-weight: 700;
+    }
     .card {
         width: 300px;
     }
 
     .card .card-img img {
         width: 280px;
+    }
+
+    .container-card-sertif img {
+        width: 300px;
+    }
+    
+    .sertif {
+        width: 300px;
+        position: relative;
+    }
+
+    .sertif .deskripsi h1{
+        font-size: 20px;
+    }
+
+    .container-contact form input {
+        padding: 10px 20px;
+        width: 180px;
+        height: 50px;
+    }
+    
+    .container-contact form input[type="text"] {
+        /* padding: 70px 300px; */
+        width: 380px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 1000px) {
+    footer .content-footer{
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    footer .copyright {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-contact form input {
+        width: 140px;
+        height: 50px;
+        background-color: #0a2230;
+    }
+    
+    .container-contact form input[type="text"] {
+        width: 300px;
+        height: 200px;
     }
 }
