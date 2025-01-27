@@ -537,7 +537,7 @@ footer .copyright {
         position: absolute;
         flex-direction: column;
         top: 70px;
-        left: -900px;
+        right: -999px;
         background-color: #091f2e;
         padding: 90px;
         border-radius: 0px 0px 25px 25px;
@@ -549,7 +549,7 @@ footer .copyright {
 }
 
     nav .list.aktif {   
-        left: 0;
+        right: 0;
     }
 
     .icon {
