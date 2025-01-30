@@ -93,6 +93,10 @@ nav ul li a:hover{
     height: 100vh;
 }
 
+.isi-home {
+    padding: 35px;
+}
+
 .isi-home h1 {
     font-size: 35px;
     font-weight: 800;
@@ -557,6 +561,10 @@ footer .copyright {
     .home {
         gap: 5rem;
         flex-direction: column;
+    }
+
+    .isi-home {
+        padding: 0;
     }
 
     .isi-home h1 {
