@@ -87,11 +87,10 @@ nav ul li a:hover{
 }
 .home {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-evenly;
     align-items: center;
     height: 100vh;
-    padding: 20px;
 }
 
 .isi-home h1 {
@@ -557,6 +556,7 @@ footer .copyright {
     }
     .home {
         gap: 5rem;
+        flex-direction: column;
     }
 
     .isi-home h1 {
@@ -569,8 +569,8 @@ footer .copyright {
     }
 
     .container-image img {
-        width: 200px;
-    }
+        width: 250px;
+    }   
 
     .container-results .judul h1 {
         font-size: 30px;
