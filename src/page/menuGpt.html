@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Menu - Rafi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #0f0f0f;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    #clock {
+      font-size: 14px;
+      color: #aaa;
+      margin-bottom: 5px;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .greeting {
+      text-align: center;
+      max-width: 600px;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    .greeting span {
+      color: #00bfff;
+      font-weight: bold;
+    }
+
+    .menu {
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .menu-item {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      padding: 15px 20px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .menu-item:hover {
+      background-color: #262626;
+      transform: translateX(4px);
+    }
+
+    .menu-item span {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .menu-item i {
+      font-style: normal;
+      font-size: 18px;
+    }
+
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: #00bfff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#" class="back-btn">&lt; Back</a>
+
+  <div id="clock">--:--:--</div>
+  <h1>Menu</h1>
+
+  <p class="greeting">
+    Hello <span>Rafi</span>, thank you for visiting my portfolio.
+    What would you like to know about me? Click on the menus below.
+  </p>
+
+  <div class="menu">
+    <div class="menu-item" onclick="alert('Go to Projects')">
+      <span><i>💻</i> Projects</span>
+      <i>›</i>
+    </div>
+    <div class="menu-item" onclick="alert('Go to Journey')">
+      <span><i>⏳</i> Journey</span>
+      <i>›</i>
+    </div>
+    <div class="menu-item" onclick="alert('Go to About Me')">
+      <span><i>ℹ️</i> About Me</span>
+      <i>›</i>
+    </div>
+    <div class="menu-item" onclick="alert('Go to Contact')">
+      <span><i>📧</i> Contact</span>
+      <i>›</i>
+    </div>
+  </div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const time = now.toLocaleTimeString();
+      document.getElementById('clock').textContent = time;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock(); // initial call
+  </script>
+
+</body>
+</html>
