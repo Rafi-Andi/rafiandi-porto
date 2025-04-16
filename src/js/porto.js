@@ -28,3 +28,32 @@ sertifAll.forEach(sertif => {
         }
     })
 });
+
+const contentWebsite = document.querySelector('.content-website')
+const contentApi = document.querySelector('.content-api')
+const projekWebsite = document.querySelector('.website')
+const projekApi = document.querySelector('.api')
+
+
+contentWebsite.addEventListener('click', () => {
+    contentWebsite.classList.add('aktif')
+    projekApi.classList.add('hidden')
+    projekWebsite.classList.remove('hidden')
+    console.log('website ditekan')
+
+    if(contentApi.classList.contains('aktif')){
+        contentApi.classList.remove('aktif')
+    }
+})
+
+contentApi.addEventListener('click', () => {
+    contentApi.classList.add('aktif')
+    projekWebsite.classList.add('hidden')
+    projekApi.classList.remove('hidden')
+    console.log('api ditekan')
+
+    if(contentWebsite.classList.contains('aktif')){
+        contentWebsite.classList.remove('aktif')
+    }
+})
+
