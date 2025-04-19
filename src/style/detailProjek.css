@@ -1,0 +1,138 @@
+
+.top-right-gradient {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 40%;
+    background: radial-gradient(circle at top right, rgba(30, 78, 216, 0.6), transparent 70%);
+    filter: blur(40px);
+    z-index: -1;
+}
+
+.bottom-left-gradient {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    height: 40%;
+    background: radial-gradient(circle at bottom left, rgba(120, 58, 220, 0.6), transparent 70%);
+    filter: blur(40px);
+    z-index: -1;
+}
+
+header {
+    padding: 20px;
+}
+
+header h5 {
+    background-color: rgba(59, 62, 255, 0.205);
+    color:  #7c8ee4;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: fit-content;
+}
+header h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.tools {
+    display: flex;
+    gap: 1rem;
+}
+
+.tools div p {
+    background-color: rgba(59, 62, 255, 0.205);
+    color:  #a5b4fc;
+    padding: 4px;
+    border-radius: 5px;
+    font-weight: 600;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.keterangan {
+    display: flex;
+    color: rgb(183, 180, 187);
+    gap: 1rem;
+}
+
+.keterangan div {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 15px;
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+main div img {
+    width: 200px;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content .image {
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    background-color: rgba(20, 24, 36, 0.6);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px;
+}
+
+.box {
+    padding: 10px;
+}
+
+.box-satu {
+    margin-bottom: 10px;
+    color: white;
+    padding: 20px;
+    background-color: rgba(20, 24, 36, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: fit-content;
+}
+
+.box-dua {
+    color: white;
+    padding: 20px;
+    background-color: rgba(20, 24, 36, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: fit-content;
+}
+
+.box-content div{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 1100px) {
+    .image img {
+        width: 400px;
+    }
+}
