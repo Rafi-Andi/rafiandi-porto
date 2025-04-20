@@ -534,6 +534,11 @@ nav ul li a:hover{
     font-size: 0.9rem;
 }
 
+.view-project a {
+    text-decoration: none;
+    color: #00abf0;
+}
+
 .project-date {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.8rem;

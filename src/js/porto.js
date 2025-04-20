@@ -56,4 +56,3 @@ contentApi.addEventListener('click', () => {
         contentWebsite.classList.remove('aktif')
     }
 })
-
