@@ -699,6 +699,10 @@ nav ul li a:hover {
 .show-more-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(30, 78, 216, 0.5);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
 }
 
 .show-more-btn .icon {
@@ -838,47 +842,173 @@ nav ul li a:hover {
   }
 }
 
-.container-contact {
-  padding: 50px;
-}
-.container-contact form {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  color: black;
+.contact-map {
+  padding: 20px;
 }
 
-.container-contact form input {
+.form-container {
+  background-color:  rgb(12, 12, 44);
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  order: 1;
+  width: 55%;
+}
+
+.container-contact {
+  padding: 10px;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+form {
+  background-color: rgb(12, 12, 44);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+form input {
+  border: none;
+  background-color: transparent;
+  border: rgb(47, 47, 47) 1px solid;
+  width: 100%;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  outline: none;
-  border: none;
-  padding: 10px 20px;
-  width: 380px;
-  height: 100px;
-  background-color: #0a2230;
-}
-
-.container-contact form input[type="text"] {
-  width: 780px;
-  height: 200px;
+  padding: 20px;
 }
 
 .container-contact form input[type="submit"] {
+  background: linear-gradient(90deg, #1e4ed8, #783adc);
+  color: #fff;
+  border: none;
   width: 200px;
   height: 50px;
-  background-color: #00abf0;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 5px 15px rgba(30, 78, 216, 0.3);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.container-contact form input[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(30, 78, 216, 0.5);
 }
 
 .container-contact .nama {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.map-container {
+  order: 2;
+  background-color: rgb(12, 12, 44);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 40%;
+  padding: 20px;
+}
+
+.map-container  iframe{
+  height: 45%;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.info-item svg {
+  margin-right: 15px;
+  flex-shrink: 0;
+  color: rgb(100, 158, 209);
+}
+
+.info-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.info-item span {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  margin-top: 3px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.social-link {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-link:hover {
+  background: linear-gradient(135deg, rgb(57, 139, 190), rgb(100, 158, 209));
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(57, 139, 190, 0.3);
+}
+
+.social-link svg {
+  width: 20px;
+  height: 20px;
+  color: white;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.social-link:hover svg {
+  opacity: 1;
 }
 
 footer {
@@ -889,8 +1019,8 @@ footer {
 
 footer .content-footer {
   display: flex;
-  justify-content: space-between;
   font-weight: 600;
+  gap: 1rem;
 }
 
 footer .judul-web h1 {
@@ -978,53 +1108,7 @@ footer .copyright {
   position: relative;
 }
 
-.input-nama label {
-  position: absolute;
-  bottom: 55px;
-  left: 20px;
-  font-size: 20px;
-  font-weight: 600;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  color: white;
-}
 
-.input-nama input:focus ~ label {
-  transform: translateY(-15px);
-  font-size: 15px;
-  -webkit-transform: translateY(-15px);
-  -moz-transform: translateY(-15px);
-  -ms-transform: translateY(-15px);
-  -o-transform: translateY(-15px);
-  color: gray;
-}
-
-.input-email label {
-  position: absolute;
-  bottom: 55px;
-  left: 20px;
-  font-size: 20px;
-  font-weight: 600;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  color: white;
-}
-
-.input-email input:focus ~ label {
-  transform: translateY(-15px);
-  font-size: 15px;
-  -webkit-transform: translateY(-15px);
-  -moz-transform: translateY(-15px);
-  -ms-transform: translateY(-15px);
-  -o-transform: translateY(-15px);
-  color: gray;
-}
 
 @media (max-width: 1200px) {
   .container-results {
@@ -1035,6 +1119,7 @@ footer .copyright {
     height: 60vh;
   }
 }
+
 
 @media (max-width: 768px) {
   .menu {
@@ -1148,77 +1233,15 @@ footer .copyright {
     font-size: 20px;
   }
 
-  .container-contact form input {
-    padding: 10px 20px;
-    width: 180px;
-    height: 120px;
+  .form-container {
+    order: 2;
+    width: 100%;
   }
 
-  .container-contact form input[type="text"] {
-    /* padding: 70px 300px; */
-    width: 380px;
-    height: 200px;
-  }
-
-  .input-nama {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--background-color);
-    position: relative;
-  }
-  .input-email {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--background-color);
-    position: relative;
-  }
-
-  .input-nama label {
-    position: absolute;
-    bottom: 68px;
-    left: 20px;
-    font-size: 18px;
-    font-weight: 600;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    color: white;
-  }
-
-  .input-nama input:focus ~ label {
-    transform: translateY(-10px);
-    font-size: 15px;
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
-    color: gray;
-  }
-
-  .input-email label {
-    position: absolute;
-    bottom: 68px;
-    left: 20px;
-    font-size: 18px;
-    font-weight: 600;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    color: white;
-  }
-
-  .input-email input:focus ~ label {
-    transform: translateY(-15px);
-    font-size: 15px;
-    -webkit-transform: translateY(-15px);
-    -moz-transform: translateY(-15px);
-    -ms-transform: translateY(-15px);
-    -o-transform: translateY(-15px);
-    color: gray;
+  .map-container {
+    order: 1 ;
+    width: 100%;
+    height: 10%;
   }
 
   .certificates-container {

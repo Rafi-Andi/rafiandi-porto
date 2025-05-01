@@ -18,7 +18,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../style/porto.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
   </head>
   <body>
     <header>
@@ -82,8 +85,8 @@
       </div>
       <div class="top-left-gradient"></div>
       <div class="bottom-right-gradient"></div>
-      <div class="bottom-right-mid-gradient"></div>
-      <div class="bottom-mid-gradient"></div>
+      <!-- <div class="bottom-right-mid-gradient"></div> -->
+      <!-- <div class="bottom-mid-gradient"></div> -->
     </div>
     <div class="container-results">
       <div class="result project">
@@ -123,7 +126,7 @@
         </div>
       </div>
     </div>
-    <div class="container" id="services">
+    <div class="container" id="services" style="margin-top: 60px;">
       <div class="deskripsi-content">
         <p
           style="
@@ -158,6 +161,7 @@
       </div>
 
       <div class="content">
+
         <div class="card-service one">
           <i class="fa-solid fa-laptop"></i>
           <h3>Website Design</h3>
@@ -176,33 +180,71 @@
         <div class="card-service down one">
           <i class="fa-solid fa-gamepad"></i>
           <h3>Web Game Developer</h3>
-          <p>Build interactive web games using JavaScript and HTML5 Canvas</p>
+          <p>
+            Membangun game web interaktif menggunakan JavaScript dan HTML5
+            Canvas
+          </p>
         </div>
       </div>
     </div>
-    
+
     <div class="top-right-gradient"></div>
     <div class="bottom-left-gradient"></div>
     <div class="container-tools">
-    <h1 class="title">Tools & Skills</h1>
-    <div class="tools-grid">
-      <div class="tool"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
-      <div class="tool"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
-      <div class="tool"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
-      <div class="tool"><i class="devicon-react-original colored"></i><span>React JS</span></div>
-      <div class="tool"><i class="devicon-nodejs-plain colored"></i><span>Node JS</span></div>
-      <div class="tool"><img src="../assets/hapi.png" width="50px" alt=""><span>Hapi JS</span></div>
-      <div class="tool"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
-      <div class="tool"><i class="devicon-github-original"></i><span>GitHub</span></div>
-      <div class="tool"><img src="../assets/Laragon.png" width="80px" alt=""><span>Laragon</span></div>
-      <div class="tool"><i class="devicon-vscode-plain colored"></i><span>VSCode</span></div>
-      <div class="tool"><i class="devicon-supabase-plain colored"></i><span>Supabase</span></div>
-      <div class="tool"><i class="devicon-railway-line colored"></i><span>Railway</span></div>
-      <div class="tool"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
-      <div class="tool"><i class="devicon-vercel-original"></i><span>Vercel</span></div>
-      <div class="tool"><i class="devicon-vitejs-plain colored"></i><span>Vite</span></div>
+      <h1 class="title">Tools & Skills</h1>
+      <div class="tools-grid">
+        <div class="tool">
+          <i class="devicon-html5-plain colored"></i><span>HTML</span>
+        </div>
+        <div class="tool">
+          <i class="devicon-css3-plain colored"></i><span>CSS</span>
+        </div>
+        <div class="tool">
+          <i class="devicon-javascript-plain colored"></i
+          ><span>JavaScript</span>
+        </div>
+        <div class="tool">
+          <i class="devicon-react-original colored"></i><span>React JS</span>
+        </div>
+        <div class="tool">
+          <i class="devicon-nodejs-plain colored"></i><span>Node JS</span>
+        </div>
+        <div class="tool">
+          <img src="../assets/hapi.png" width="50px" alt="" /><span
+            >Hapi JS</span
+          >
+        </div>
+        <div class="tool">
+          <i class="devicon-php-plain colored"></i><span>PHP</span>
+        </div>
+        <div class="tool">
+          <i class="devicon-github-original"></i><span>GitHub</span>
+        </div>
+        <div class="tool">
+          <img src="../assets/Laragon.png" width="80px" alt="" /><span
+            >Laragon</span
+          >
+        </div>
+        <div class="tool">
+          <i class="devicon-vscode-plain colored"></i><span>VSCode</span>
+        </div>
+        <div class="tool">
+          <i class="devicon-supabase-plain colored"></i><span>Supabase</span>
+        </div>
+        <div class="tool">
+          <i class="devicon-railway-line colored"></i><span>Railway</span>
+        </div>
+        <div class="tool">
+          <i class="devicon-mysql-plain colored"></i><span>MySQL</span>
+        </div>
+        <div class="tool">
+          <i class="devicon-vercel-original"></i><span>Vercel</span>
+        </div>
+        <div class="tool">
+          <i class="devicon-vitejs-plain colored"></i><span>Vite</span>
+        </div>
+      </div>
     </div>
-  </div>
 
     <div class="container" id="my-projects">
       <div class="portfolio-heading">
@@ -226,6 +268,7 @@
         <div class="project-card">
           <div class="project-image">
             <img
+              loading="lazy"
               src="../assets/financialtracker.png"
               alt="E-commerce Website"
               width="400px"
@@ -506,7 +549,9 @@
                   <span>Dicoding Indonesia</span>
                 </div>
                 <div class="certificate-date">Januari 2025</div>
-                <a href="https://www.dicoding.com/certificates/KEXL7G0DMXG2"><button class="view-btn">Lihat Detail ↗</button></a>
+                <a href="https://www.dicoding.com/certificates/KEXL7G0DMXG2"
+                  ><button class="view-btn">Lihat Detail ↗</button></a
+                >
               </div>
             </div>
             <div class="certificate-item">
@@ -523,7 +568,9 @@
                   <span>Dicoding</span>
                 </div>
                 <div class="certificate-date">Februari 2025</div>
-                <a href="https://www.dicoding.com/certificates/0LZ0R9M2RP65"><button class="view-btn">Lihat Detail ↗</button></a>
+                <a href="https://www.dicoding.com/certificates/0LZ0R9M2RP65"
+                  ><button class="view-btn">Lihat Detail ↗</button></a
+                >
               </div>
             </div>
             <div class="certificate-item">
@@ -540,10 +587,11 @@
                   <span>Dicoding</span>
                 </div>
                 <div class="certificate-date">Februari 2025</div>
-                <a href="http://dicoding.com/certificates/QLZ93N1L2Z5D"><button class="view-btn">Lihat Detail ↗</button></a>
+                <a href="http://dicoding.com/certificates/QLZ93N1L2Z5D"
+                  ><button class="view-btn">Lihat Detail ↗</button></a
+                >
               </div>
             </div>
-
 
             <div class="certificate-item">
               <div class="certificate-badge">Backend</div>
@@ -559,14 +607,13 @@
                   <span>Dicoding</span>
                 </div>
                 <div class="certificate-date">Maret 2025</div>
-                <a href="https://www.dicoding.com/certificates/72ZD5DNKVZYW"><button class="view-btn">Lihat Detail ↗</button></a>
+                <a href="https://www.dicoding.com/certificates/72ZD5DNKVZYW"
+                  ><button class="view-btn">Lihat Detail ↗</button></a
+                >
               </div>
             </div>
 
-            <div
-              class="certificate-item hidden show-more-item"
-            
-            >
+            <div class="certificate-item hidden show-more-item">
               <div class="certificate-badge">Javascript</div>
               <img
                 src="../assets/dasarJS.png"
@@ -580,14 +627,13 @@
                   <span>Dicoding</span>
                 </div>
                 <div class="certificate-date">Januari 2025</div>
-                <a href="https://www.dicoding.com/certificates/81P2L8D1JZOY"><button class="view-btn">Lihat Detail ↗</button></a>
+                <a href="https://www.dicoding.com/certificates/81P2L8D1JZOY"
+                  ><button class="view-btn">Lihat Detail ↗</button></a
+                >
               </div>
             </div>
 
-            <div
-              class="certificate-item hidden show-more-item"
-            
-            >
+            <div class="certificate-item hidden show-more-item">
               <div class="certificate-badge">Fundamental</div>
               <img
                 src="../assets/DasarProgramming.png"
@@ -601,14 +647,13 @@
                   <span>Dicoding</span>
                 </div>
                 <div class="certificate-date">Januari 2025</div>
-                <a href="https://www.dicoding.com/certificates/98XWE6Q20XM3"><button class="view-btn">Lihat Detail ↗</button></a>
+                <a href="https://www.dicoding.com/certificates/98XWE6Q20XM3"
+                  ><button class="view-btn">Lihat Detail ↗</button></a
+                >
               </div>
             </div>
 
-            <div
-              class="certificate-item hidden show-more-item"
-            
-            >
+            <div class="certificate-item hidden show-more-item">
               <div class="certificate-badge">Fundamental</div>
               <img
                 src="../assets/logikaProgramming.png"
@@ -622,14 +667,13 @@
                   <span>dicoding</span>
                 </div>
                 <div class="certificate-date">Januari 2025</div>
-                <a href="https://www.dicoding.com/certificates/07Z63LDWWZQR"><button class="view-btn">Lihat Detail ↗</button></a>
+                <a href="https://www.dicoding.com/certificates/07Z63LDWWZQR"
+                  ><button class="view-btn">Lihat Detail ↗</button></a
+                >
               </div>
             </div>
 
-            <div
-              class="certificate-item hidden show-more-item"
-            
-            >
+            <div class="certificate-item hidden show-more-item">
               <div class="certificate-badge">Git & Github</div>
               <img
                 src="../assets/github.png"
@@ -643,7 +687,9 @@
                   <span>Dicoding</span>
                 </div>
                 <div class="certificate-date">Januari 2025</div>
-                <a href="https://www.dicoding.com/certificates/N9ZO9DW06XG5"><button class="view-btn">Lihat Detail ↗</button></a>
+                <a href="https://www.dicoding.com/certificates/N9ZO9DW06XG5"
+                  ><button class="view-btn">Lihat Detail ↗</button></a
+                >
               </div>
             </div>
           </div>
@@ -657,22 +703,185 @@
         </div>
       </section>
     </div>
-    <div class="container-contact" id="hubungi">
-      <h1 style="text-align: center">Hubungi Saya</h1>
-      <form action="index.html">
-        <div class="nama">
-          <div class="input-nama">
-            <input name="name" id="name" type="name" name="nama" />
-            <label for="name">Nama anda</label>
+    <div class="contact-map">
+      <div class="section-title">
+        <h2>Kontak & Lokasi</h2>
+        <p>
+          Hubungi kami melalui halaman berikut, bisa dengan sosial media yang tersedia dan juga pesan langsung
+        </p>
+      </div>
+      <div class="container-contact" id="hubungi">
+        <div class="form-container">
+          <form action="#hubungi">
+            <div class="nama">
+              <div class="input-nama">
+                <label for="name">Nama anda</label>
+                <input
+                  name="name"
+                  id="name"
+                  placeholder="Jhon Doe"
+                  type="name"
+                  name="nama"
+                />
+              </div>
+              <div class="input-nama">
+                <label for="email">Masukan email</label>
+                <input
+                  name="email"
+                  id="name"
+                  placeholder="emailanda@domain.com"
+                  type="name"
+                  name="nama"
+                />
+              </div>
+            </div>
+            <label for="">Masukan pesan</label>
+            <input
+              id="pesan"
+              type="text"
+              placeholder="Pesan anda.."
+              name="pesan"
+            />
+            <input type="submit" />
+          </form>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.4507260345426!2d112.73140327357186!3d-7.305182371815898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb9ef4d7d9ed%3A0x5959ad479fd46d02!2sSMK%20Negeri%201%20Surabaya!5e1!3m2!1sid!2sid!4v1746015744296!5m2!1sid!2sid"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="info-list">
+            <div class="info-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <div>
+                <p>Jl. Smea No.4, Wonokromo, Kec. Wonokromo</p>
+                <span>Surabaya, Jawa Timur 60243</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+              <div>
+                <p>0895347193482</p>
+                <span>Setip hari pukul 07.00 sampai 18.00</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <div>
+                <p>rafiandiprayitno9528@gmail.com</p>
+                <span>Hubungi kami dengan email diatas</span>
+              </div>
+            </div>
           </div>
-          <div class="input-email">
-            <input type="email" id="email" name="email" />
-            <label for="email">Email anda</label>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="GitHub">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </a>
+
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+
+          
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
           </div>
         </div>
-        <input type="text" placeholder="Pesan anda.." name="pesan" />
-        <input type="submit" />
-      </form>
+      </div>
     </div>
     <footer id="footer">
       <div class="content-footer">
