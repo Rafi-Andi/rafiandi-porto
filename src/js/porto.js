@@ -60,7 +60,7 @@ const showMore = document.querySelector('#showMoreBtn');
 const showMoreText = document.querySelector('#showMoreText');
 const certificateItems = document.querySelectorAll('.certificate-item');
 
-const initialVisibleCount = 3;
+const initialVisibleCount = 6;
 
 certificateItems.forEach((item, index) => {
   if (index >= initialVisibleCount) {

@@ -31,31 +31,38 @@
         </div>
         <ul class="list">
           <li>
-            <a href="#home"><i data-feather="home" class="icon"></i>Beranda</a>
+            <a href="#beranda"
+              ><i data-feather="home" class="icon"></i>Beranda</a
+            >
           </li>
           <li>
-            <a href="#projek"
-              ><i data-feather="archive" class="icon"></i>Projek</a
+            <a href="#services"
+              ><i data-feather="archive" class="icon"></i>Tentang Saya</a
             >
           </li>
           <li>
             <a href="#skill"><i data-feather="code" class="icon"></i>Skill</a>
           </li>
           <li>
-            <a href="#sertifikat"
-              ><i data-feather="award" class="icon"></i>Pencapaian</a
+            <a href="#my-projects"
+              ><i data-feather="award" class="icon"></i>Projek</a
             >
           </li>
           <li>
-            <a href="#hubungi"
-              ><i data-feather="inbox" class="icon"></i>Hubungi</a
+            <a href="#sertifikat"
+              ><i data-feather="inbox" class="icon"></i>Sertifikat</a
+            >
+          </li>
+          <li>
+            <a href="#kontak"
+              ><i data-feather="inbox" class="icon"></i>Kontak</a
             >
           </li>
         </ul>
         <i data-feather="menu" class="menu"></i>
       </nav>
     </header>
-    <div class="home" id="home" style="position: relative">
+    <div class="home" id="beranda" style="position: relative">
       <div class="isi-home">
         <h2>Saya Rafi Andi</h2>
         <h1>Junior Web Developer</h1>
@@ -66,13 +73,13 @@
             software engineering
           </p>
         </div>
-        <div class="container-tombol">
-          <a href="https://github.com/Rafi-Andi"
+        <div class="container-tombol" style="z-index: 99999px;">
+          <a style="z-index: 9999;" href="https://github.com/Rafi-Andi"
             ><div class="tombol satu">
               <p>Github</p>
             </div></a
           >
-          <a
+          <a style="z-index: 99999;"
             href="https://www.instagram.com/rafi.ap_95/?igsh=MWJvZGVvNDZ0NDN5dQ%3D%3D#"
             ><div class="tombol dua">
               <p>Contact</p>
@@ -83,11 +90,11 @@
       <div class="container-image">
         <img src="./src/assets/profil.jpg" alt="gambar" width="300px" />
       </div>
-      <div class="top-left-gradient"></div>
       <div class="bottom-right-gradient"></div>
-      <!-- <div class="bottom-right-mid-gradient"></div> -->
+      <div class="bottom-right-mid-gradient"></div>
       <div class="bottom-mid-gradient"></div>
     </div>
+
     <div class="container-results">
       <div class="result project">
         <div class="judul">
@@ -152,7 +159,7 @@
           web menggunakan JavaScript dan HTML5 Canvas.
         </p>
         <div class="container-tombol">
-          <a href="https://github.com/Rafi-Andi"
+          <a href="#skill"
             ><div class="tombol satu">
               <p style="color: white">Lihat semua</p>
             </div></a
@@ -189,7 +196,7 @@
 
     <div class="top-right-gradient"></div>
     <div class="bottom-left-gradient"></div>
-    <div class="container-tools">
+    <div class="container-tools" id="skill">
       <h1 class="title">Tools & Skills</h1>
       <div class="tools-grid">
         <div class="tool">
@@ -287,7 +294,9 @@
             </p>
             <div class="project-footer">
               <div class="view-project">
-                <a href="./src/page/detailFinancialTracker.html">Detail Projek</a>
+                <a href="./src/page/detailFinancialTracker.html"
+                  >Detail Projek</a
+                >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -523,7 +532,7 @@
     <div>
       <div class="top-right-gradient"></div>
       <div class="bottom-left-gradient"></div>
-      <section class="certificates-section" id="certificates">
+      <section class="certificates-section" id="sertifikat">
         <div class="container">
           <div class="section-title">
             <h2>Sertifikat & Pencapaian</h2>
@@ -544,11 +553,15 @@
               <div class="certificate-overlay">
                 <h3 class="certificate-title">DBS Foundation X Dicooding</h3>
                 <div class="certificate-issuer">
-                  <img src="./src/assets/logodicooding.jpg" alt="Dicoding Logo" />
+                  <img
+                    src="./src/assets/logodicooding.jpg"
+                    alt="Dicoding Logo"
+                  />
                   <span>Dicoding Indonesia</span>
                 </div>
                 <div class="certificate-date">Mei 2025</div>
-                <a href="https://drive.google.com/file/d/1KvjWjJNymOWR5lCVydU_Q9vapFpGhlGk/view"
+                <a
+                  href="https://drive.google.com/file/d/1KvjWjJNymOWR5lCVydU_Q9vapFpGhlGk/view"
                   ><button class="view-btn">Lihat Detail ↗</button></a
                 >
               </div>
@@ -563,11 +576,15 @@
               <div class="certificate-overlay">
                 <h3 class="certificate-title">Best Projek Cooding Camp</h3>
                 <div class="certificate-issuer">
-                  <img src="./src/assets/logodicooding.jpg" alt="Dicoding Logo" />
+                  <img
+                    src="./src/assets/logodicooding.jpg"
+                    alt="Dicoding Logo"
+                  />
                   <span>Dicoding Indonesia</span>
                 </div>
                 <div class="certificate-date">Mei 2025</div>
-                <a href="https://drive.google.com/file/d/1CD2eLpkCh9rEqxsCuLdCgOFQ4NIc6hKp/view"
+                <a
+                  href="https://drive.google.com/file/d/1CD2eLpkCh9rEqxsCuLdCgOFQ4NIc6hKp/view"
                   ><button class="view-btn">Lihat Detail ↗</button></a
                 >
               </div>
@@ -582,7 +599,10 @@
               <div class="certificate-overlay">
                 <h3 class="certificate-title">Dasar pemrograman website</h3>
                 <div class="certificate-issuer">
-                  <img src="./src/assets/logodicooding.jpg" alt="Dicoding Logo" />
+                  <img
+                    src="./src/assets/logodicooding.jpg"
+                    alt="Dicoding Logo"
+                  />
                   <span>Dicoding Indonesia</span>
                 </div>
                 <div class="certificate-date">Januari 2025</div>
@@ -660,7 +680,10 @@
               <div class="certificate-overlay">
                 <h3 class="certificate-title">Dasar Javascript</h3>
                 <div class="certificate-issuer">
-                  <img src="./src/assets/logodicooding.jpg" alt="Udacity Logo" />
+                  <img
+                    src="./src/assets/logodicooding.jpg"
+                    alt="Udacity Logo"
+                  />
                   <span>Dicoding</span>
                 </div>
                 <div class="certificate-date">Januari 2025</div>
@@ -700,7 +723,10 @@
               <div class="certificate-overlay">
                 <h3 class="certificate-title">Logika pemrograman</h3>
                 <div class="certificate-issuer">
-                  <img src="./src/assets/logodicooding.jpg" alt="dicoding Logo" />
+                  <img
+                    src="./src/assets/logodicooding.jpg"
+                    alt="dicoding Logo"
+                  />
                   <span>dicoding</span>
                 </div>
                 <div class="certificate-date">Januari 2025</div>
@@ -720,7 +746,10 @@
               <div class="certificate-overlay">
                 <h3 class="certificate-title">Dasar git & github</h3>
                 <div class="certificate-issuer">
-                  <img src="./src/assets/logodicooding.jpg" alt="Dicoding Logo" />
+                  <img
+                    src="./src/assets/logodicooding.jpg"
+                    alt="Dicoding Logo"
+                  />
                   <span>Dicoding</span>
                 </div>
                 <div class="certificate-date">Januari 2025</div>
@@ -741,7 +770,7 @@
       </section>
     </div>
     <div class="contact-map">
-      <div class="section-title">
+      <div class="section-title" id="kontak">
         <h2>Kontak & Lokasi</h2>
         <p>
           Hubungi kami melalui halaman berikut, bisa dengan sosial media yang
@@ -859,7 +888,7 @@
             </div>
           </div>
           <div class="social-links">
-            <a href="#" class="social-link" aria-label="GitHub">
+            <a href="https://github.com/Rafi-Andi" class="social-link" aria-label="GitHub">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -877,7 +906,7 @@
               </svg>
             </a>
 
-            <a href="#" class="social-link" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/moch-rafi-andi-prayitno-125b6531b/" class="social-link" aria-label="LinkedIn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -897,7 +926,7 @@
               </svg>
             </a>
 
-            <a href="#" class="social-link" aria-label="Instagram">
+            <a href="https://www.instagram.com/rafi.ap_95?igsh=MWJvZGVvNDZ0NDN5dQ==" class="social-link" aria-label="Instagram">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -928,7 +957,7 @@
             class="logo"
             style="display: flex; align-items: center; gap: 0.5rem"
           >
-            <img src="../assets/logo.png" width="60px" alt="" />
+            <img src="./src/assets/logo.png" width="60px" alt="" />
             <h1>MRafiAndiP</h1>
           </div>
           <p>
@@ -936,41 +965,7 @@
             Dignissimos, nam. Lorem ipsum dolor sit amet.
           </p>
           <div class="social-links">
-            <a href="#" aria-label="Facebook">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-                ></path>
-              </svg>
-            </a>
-            <a href="#" aria-label="Twitter">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
-                ></path>
-              </svg>
-            </a>
-            <a href="#" aria-label="Instagram">
+            <a href="https://www.instagram.com/rafi.ap_95?igsh=MWJvZGVvNDZ0NDN5dQ==" aria-label="Instagram">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -989,7 +984,7 @@
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
               </svg>
             </a>
-            <a href="#" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/moch-rafi-andi-prayitno-125b6531b/" aria-label="LinkedIn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -1008,21 +1003,26 @@
                 <circle cx="4" cy="4" r="2"></circle>
               </svg>
             </a>
+            <a href="https://github.com/Rafi-Andi" aria-label="LinkedIn" style="text-decoration: none;">
+              <i id="ikon" class="fa-brands fa-github"></i>
+            </a>
           </div>
         </div>
         <ul>
           <h2><span>Nav</span> Link</h2>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#services">Tentang Saya</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#my-projects">Projek</a></li>
+          <li><a href="#sertifikat">Sertifikat</a></li>
+          <li><a href="#kontak">Kontak</a></li>
         </ul>
         <ul>
           <h2><span>Contact</span> Info</h2>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
+          <li><i id="ikon" class="fa-brands fa-github"></i><a href="https://github.com/Rafi-Andi">Rafi-Andi</a></li>
+          <li><i id="ikon" class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/moch-rafi-andi-prayitno-125b6531b/">Moch Rafi Andi Prayitno</a></li>
+          <li><i id="ikon" class="fa-solid fa-envelope"></i><a href="">rafiandiprayitno9528@gmail.com</a></li>
+          <li><i id="ikon" class="fa-solid fa-map-location-dot"></i><a href="">Jl. Smea No.4, Wonokromo, <br> Kec. Wonokromo, Surabaya, <br> Jawa Timur 60243</a></li>
         </ul>
       </div>
       <div class="bottom">
