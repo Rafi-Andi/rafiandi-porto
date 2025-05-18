@@ -1301,31 +1301,20 @@ form input {
 }
 
 @media (max-width: 480px) {
+  .kategori {
+    flex-direction: column;
+  }
+
   .container-results h1 {
     font-size: 10px;
   }
-  .container-contact form input {
-    width: 140px;
-    height: 160px;
-    background-color: #0a2230;
-  }
+
   .certificates-container {
     grid-template-columns: 1fr;
-  }
-  .container-contact form input[type="text"] {
-    width: 300px;
-    height: 200px;
   }
 
   .container-image img {
     width: 200px;
-  }
-
-  .input-nama label {
-    bottom: 100px;
-  }
-  .input-email label {
-    bottom: 100px;
   }
 
   .content {
