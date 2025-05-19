@@ -92,8 +92,10 @@ main div img {
 }
 
 .content {
-  display: flex;
-  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 120px;
+  padding-right: 120px;
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
@@ -129,7 +131,7 @@ main div img {
 }
 
 .thumb img {
-  width: 120px;
+  width: 100px;
 }
 
 .box {
@@ -163,7 +165,7 @@ main div img {
 
 .box-content div {
   display: flex;
-  width: 400px;
+  width: 100%;
   justify-content: space-between;
   border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
 }
@@ -217,9 +219,6 @@ main div img {
     background-color: rgba(138, 95, 255, 0.84);
 }
 @media (max-width: 1100px) {
-  .image .main-image img {
-    width: 400px;
-  }
   .thumb img {
     width: 90px;
   }
@@ -238,5 +237,8 @@ main div img {
   .container-tombol {
     display: flex;
     margin: 20px;
-}
+  }
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
